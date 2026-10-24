@@ -1,0 +1,22 @@
+[project]
+name = "itmo-mlsd-hw"
+version = "0.1.0"
+description = "Домашние задания курса ITMO ML System Design; ДЗ1 — сетап репозитория и ML-дизайн-док проекта absorbix-ai"
+readme = "README.md"
+requires-python = ">=3.12"
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4",
+    "ruff>=0.8",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W", "UP", "B", "SIM", "RUF"]
+
+[tool.ruff.format]
+quote-style = "double"
